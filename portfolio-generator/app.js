@@ -7,7 +7,7 @@ const [name, gitHub] = profileDataArgs
 
 const pageHTML = generatePage(name, gitHub)
 
-fs.writeFile('./index.html', generatePage(name, gitHub) , err => {
+fs.writeFile('./index.html', pageHTML , err => {
   if (err) throw err;
   
   console.log('Portfolio complete! Checkout index.html to see the output!');
